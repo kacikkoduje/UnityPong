@@ -16,7 +16,7 @@ public class PaddleR : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            rb.AddForce(Vector2.up * Time.deltaTime * 50);
+            rb.AddForce(Vector2.up * Time.deltaTime * 500);
         }
         else
         {
@@ -25,7 +25,7 @@ public class PaddleR : MonoBehaviour
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            rb.AddForce(Vector2.down * Time.deltaTime * 50);
+            rb.AddForce(Vector2.down * Time.deltaTime * 500);
         }
         else
         {
