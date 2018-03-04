@@ -18,9 +18,17 @@ public class PaddleL : MonoBehaviour
         {
             rb.AddForce(Vector2.up * Time.deltaTime * 50);
         }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
         if (Input.GetKey(KeyCode.S))
         {
             rb.AddForce(Vector2.down * Time.deltaTime * 50);
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
         }
 
         if (Input.GetKeyUp(KeyCode.S))
