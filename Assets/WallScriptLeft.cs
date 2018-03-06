@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class WallScript : MonoBehaviour
+public class WallScriptLeft : MonoBehaviour
 {
     public Text textCounter;
     public int points;
@@ -26,7 +26,7 @@ public class WallScript : MonoBehaviour
 
     private void DisplayCounter()
     {
-        this.textCounter.text = string.Format("Score: {0}", this.PointCount/2);
+        this.textCounter.text = string.Format(": {0}",this.PointCount/2);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

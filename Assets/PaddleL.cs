@@ -16,7 +16,7 @@ public class PaddleL : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(Vector2.up * Time.deltaTime * 500);
+            rb.AddForce(Vector2.up * Time.deltaTime * 10000);
         }
         else
         {
@@ -24,7 +24,7 @@ public class PaddleL : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rb.AddForce(Vector2.down * Time.deltaTime * 500);
+            rb.AddForce(Vector2.down * Time.deltaTime * 10000);
         }
         else
         {
